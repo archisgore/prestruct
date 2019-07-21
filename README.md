@@ -12,10 +12,13 @@ After a [blog post](https://medium.com/@archisgore/can-we-just-cut-to-infrastruc
 * Shouldn't drop you onto the lower machine. We don't write Javascript programs, and then debug in Assembly, while fully understanding how each construct of Javascript compiles into Machine code.
 * Manifestation is context sensitive (programs have a flow or order, top-down.) It means reordering statements can change the result.
 * Immutable infrastructure has one large obvious blind-spot: Existing/Current State. Consider changing a Schema (Kubernetes Resource, Cloud Formation Template, Terraform, etc.)
-** You start with Schema A: (name, age, location)
-** You want Schema B: (first name, last name, age, city, country)
-** You cannot express this, because current state is blindsided. Immutability doesn't mean lack of change. It means no transparent under-handed changes. Even in Erlang or Haskell or Lisp or the most Puritanical Functional Language Of All Time, you are allowed to say: `state2 = functionOf(state1)`
-** This problem is "Implicit Dependency". You declare Immutable Infrastructure, but you somehow magically "know" what the initial conditions should be *wink wink*. You have to be in on the joke to know the punchline.
+  * You start with Schema A: (name, age, location)
+  * You want Schema B: (first name, last name, age, city, country)
+  * You cannot express this, because current state is blindsided. Immutability doesn't mean lack of change. It means no
+    transparent under-handed changes. Even in Erlang or Haskell or Lisp or the most Puritanical Functional 
+     Language Of All Time, you are allowed to say: `state2 = functionOf(state1)`
+  * This problem is "Implicit Dependency". You declare Immutable Infrastructure, but you somehow magically "know" 
+    what the initial conditions should be *wink wink*. You have to be in on the joke to know the punchline.
 
 # Enter PreStruct
 
