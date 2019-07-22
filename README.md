@@ -1,6 +1,6 @@
 # PreStruct
 Second Order *Pre*dicate-Logic Infra*struct*ure: Infrastructure as Code
-+ Declaractive Infrastructure.
++ Declarative Infrastructure.
 
 # The problem
 
@@ -39,7 +39,7 @@ Second Order Predicate Logic with the following properties:
 * It is not detached from actuation. It does not create a
     cloud-formation or Kubernetes YAML that is not it's concern
     after generation.
-* Is Declaractive, but not Static. You Declare what you Want:
+* Is Declarative, but not Static. You Declare what you Want:
     "A Secure WebService" and get what you want: "A Secure WebService".
     * Nobody really wants 50 containers, 30 of them
     with side-cars, 20 load-balancers, 3 certs, 5 DNS configs for Let's
