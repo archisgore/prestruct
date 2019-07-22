@@ -31,14 +31,14 @@ lacks a few things I want:
 PreStruct is a manifestation programming language bounded at
 Second Order Predicate Logic with the following properties:
 * Not a code-generator or M4/C/expansion-style Macro expander.
-* It is context-sensitive and unordered: The real-world context
+* It is context-aware: The real-world context
     in which it operates, and the real-world consequenes it creates
     are acknowledged. Forgeting to declare a database in the new
     revision thereby deleting it, for instance, is not left
     as an exercise to the user.
 * It is not detached from actuation. It does not create a
-    cloud-formation or Kubernetes YAML that is not it's concern
-    after generation.
+    cloud-formation or Kubernetes YAML blob that is your problem
+    to use as you see fit, and debug/maintain/manage.
 * Is Declarative, but not Static. You Declare what you Want:
     "A Secure WebService" and get what you want: "A Secure WebService".
     * Nobody really wants 50 containers, 30 of them
